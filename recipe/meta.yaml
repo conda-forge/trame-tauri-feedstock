@@ -1,18 +1,18 @@
 {% set name = "trame-tauri" %}
-{% set version = "0.2.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/trame-tauri-{{ version }}.tar.gz
-  sha256: a7751aa5344dc0d1df4e0bacd82fb8e28e3278e07dd67eeaba42b009534a2d9e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 408d9222119917c2e12bec1b48f79326a99d05a6f9d989c93c8f9a0309f3eb48
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:

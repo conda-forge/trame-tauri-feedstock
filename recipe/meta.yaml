@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/trame-tauri-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/trame_tauri-{{ version }}.tar.gz
   sha256: 408d9222119917c2e12bec1b48f79326a99d05a6f9d989c93c8f9a0309f3eb48
 
 build:

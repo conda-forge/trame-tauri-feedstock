@@ -1,4 +1,4 @@
-{% set name = "trame_tauri" %}
+{% set name = "trame-tauri" %}
 {% set version = "1.0.2" %}
 
 package:
